@@ -4,24 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio personal</title>
-
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; }
-        header, footer { background-color: #333; color: white; padding: 15px; text-align: center; }
-        nav { background: #555; padding: 10px; }
-        nav a { color: white; margin: 0 10px; text-decoration: none; }
-        main { padding: 20px; }
-        section { margin-bottom: 20px; }
-        h2 { color: #333; }
+        /* Reseteo de márgenes y padding por defecto */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales del cuerpo */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 50px; /* Espacio superior para la navegación */
+        }
+
+        /* Estilo del encabezado */
+        header {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Estilo de la navegación */
+        nav {
+            background-color: #34495E;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #E67E22;
+            text-decoration: underline;
+        }
+
+        /* Sección principal */
+        main {
+            margin-top: 70px; /* Espacio para la barra de navegación fija */
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #34495E;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Estilos para los artículos de proyectos */
+        article {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ECF0F1;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        article h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2980B9;
+        }
+
+        article p {
+            font-size: 1rem;
+            color: #7F8C8D;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer p a {
+            color: #E67E22;
+            text-decoration: none;
+        }
+
+        footer p a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    
-
     <header>
         <h1>Portafolio De Cilis</h1>
-
-        <p>Ingeniero en computacion | Desarrollador</p>
+        <p>Ingeniero en computación | Desarrollador</p>
     </header>
 
     <nav>
@@ -32,31 +147,35 @@
 
     <main>
         <section id="sobre-mi">
-            <h2>Sobre mi</h2>
-            <p>Hola, soy Marcos Cardenas, un ingeniero en computacion</p>
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Marcos Cardenas, un ingeniero en computación apasionado por el desarrollo web y la tecnología. Siempre estoy en busca de nuevos retos y oportunidades para seguir aprendiendo y mejorar mis habilidades.</p>
         </section>
 
         <section id="proyectos">
             <h2>Proyectos Personales</h2>
             <article>
-                <h3>Proyecto 1: Sitio web de comercio electronico</h3>
-                <p>Desarrolle un sitio web de comercio electronico</p>
+                <h3>Proyecto 1: Sitio web de comercio electrónico</h3>
+                <p>Desarrollé un sitio web de comercio electrónico, implementando funciones como carrito de compras, pasarela de pago y administración de productos.</p>
             </article>
             <article>
                 <h3>Proyecto 2: Blog Personal</h3>
-                <p>Desarrolle un sitio web de un blog personal</p>
+                <p>Creé un blog personal donde comparto artículos sobre tecnología, desarrollo web y programación, con un diseño responsive y amigable.</p>
             </article>
             <article>
-                <h3>Proyecto 3: Portafolio en linea</h3>
-                <p>Diseñe y desarrolle mi propio de portafolio en linea para mostrar mis habilidades</p>
+                <h3>Proyecto 3: Portafolio en línea</h3>
+                <p>Diseñé y desarrollé este portafolio en línea para mostrar mis proyectos, habilidades y mi trayectoria profesional de manera visual y accesible.</p>
             </article>
         </section>
 
-        <footer>
-            <p>Contacto: correo@gmail.com</p>
-            <p>&copy; 2025 Universidad De Leon - Todos los derechos reservados</p>
-        </footer>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de mi correo electrónico: <strong>correo@gmail.com</strong></p>
+        </section>
     </main>
 
+    <footer>
+        <p>&copy; 2025 Universidad De León - Todos los derechos reservados</p>
+        <p>Desarrollado por <a href="mailto:correo@gmail.com">Marcos Cardenas</a></p>
+    </footer>
 </body>
 </html>
